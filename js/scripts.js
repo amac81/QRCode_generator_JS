@@ -20,7 +20,7 @@ function generateQrCode() {
     
     qrCodeImg.addEventListener("load", ()=> {
         container.classList.add("active");
-        qrCodeBtn.innerText = "Qr Code generated!";
+        qrCodeBtn.innerText = "QR Code generated!";
     });
     
 }
@@ -29,3 +29,8 @@ qrCodeBtn.addEventListener("click",  ()=> {
     generateQrCode();
 });
 
+qrCodeInput.addEventListener("keydown",  (e)=> {
+    if(e.code === "Enter"){
+        generateQrCode();
+    }
+});
