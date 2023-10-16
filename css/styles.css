@@ -62,7 +62,7 @@ body {
 }
 
 #qr-form button {
-    background-color: #03504c;
+    background-color: #073d3b;
     color: #fff;
     font-size: 1.2rem;
     margin-top: 20px;
@@ -85,7 +85,8 @@ body {
     margin: 20px 15px;
     display: flex;
     justify-content: center;
-    border-radius: 10px;    
+    border-radius: 10px;
+    transition: 0.1s;    
 }
 
 .container.active #qr-code{
