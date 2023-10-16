@@ -4,7 +4,7 @@ const qrCodeBtn = document.querySelector("#qr-form button");
 const qrCodeInput = document.querySelector("#qr-form input");
 const qrCodeImg = document.querySelector("#qr-code img");
 
-// functions
+// QR CODE GENERATE
 
 // events
 function generateQrCode() {
@@ -32,5 +32,14 @@ qrCodeBtn.addEventListener("click",  ()=> {
 qrCodeInput.addEventListener("keydown",  (e)=> {
     if(e.code === "Enter"){
         generateQrCode();
+    }
+});
+
+
+// QR CODE AREA CLEAN
+qrCodeInput.addEventListener("keyup", ()=> {
+    if(!qrCodeInput.value){
+        container.classList.remove("active");
+        qrCodeBtn.innerText = "Generate QR Code";
     }
 });
