@@ -1,4 +1,4 @@
-# JavaScript QR code generator projec
+# JavaScript QR code generator project
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/amac81/QRCode_generator_JS/blob/main/LICENSE) 
 
